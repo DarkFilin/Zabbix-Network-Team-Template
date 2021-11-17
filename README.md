@@ -5,6 +5,8 @@
 
 Протестирован для Zabbix 4.0 и Windows 2019.
 
+Результат работы шаблона - обнаружение всех Team интерфейсов, получение получение статуса Team интерфейсов и режима его работы, триггер срабатывающий на неработоспособность одного из сетевых интерфейсов, входящих в team интерфейс.
+
 ### Настройки хоста, на котором необходимо мониторить Team (меняя %Zabbix_install_folder% на путь к папке, в которую установлен Zabbix Agent):
 
 Кладем скрипт в папку "%Zabbix_install_folder%\scripts\NetworkTeamZabbixCheck.ps1"
@@ -92,6 +94,8 @@ Expression: {Template_Network_Team:network.team[health,status,{#TEAM.NAME}].rege
 A template for detecting team network interfaces made by Windows (LBFO).
 
 Tested for Zabbix 4.0 and Windows 2019.
+
+The result of the template's work is the detection of all Team interfaces, obtaining the status of Team interfaces and its mode of operation, a trigger that is triggered when one of the network interfaces included in the team interface is inoperable. 
 
 ### Host settings on which the Team can be monitored (changing% Zabbix_install_folder% to the path to the folder where the Zabbix Agent is installed):
 
