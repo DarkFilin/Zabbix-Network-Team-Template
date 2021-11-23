@@ -13,6 +13,8 @@
 
 Кладем файл настроек в "%Zabbix_install_folder%\zabbix_agentd.conf.d\NetworkTeamZabbixCheck.conf"
 
+Изменяем в файле настроек "%Zabbix_install_folder%\zabbix_agentd.conf.d\NetworkTeamZabbixCheck.conf" путь к скрипту "%Zabbix_install_folder%\scripts\NetworkTeamZabbixCheck.ps1"
+
 В основном конфиге агента заббикс "%Zabbix_install_folder%\zabbix_agentd.conf" включаем дополнительные файлы конфигураций, добавляя строку в разделе Include:
 
 Include=%Zabbix_install_folder%\zabbix_agentd.conf.d\*.conf
@@ -102,6 +104,8 @@ The result of the template's work is the detection of all Team interfaces, obtai
 Put the script in the folder "%Zabbix_install_folder%\scripts\NetworkTeamZabbixCheck.ps1"
 
 Put the settings file in "%Zabbix_install_folder%\zabbix_agentd.conf.d\NetworkTeamZabbixCheck.conf"
+
+Change the path to the script "%Zabbix_install_folder%\scripts\NetworkTeamZabbixCheck.ps1" in the settings file "%Zabbix_install_folder%\zabbix_agentd.conf.d\NetworkTeamZabbixCheck.conf"
 
 In the main config of the zabbix agent "% Zabbix_install_folder%\zabbix_agentd.conf" we include additional configuration files by adding a line in the Include section:
 
