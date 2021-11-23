@@ -3,7 +3,7 @@
 ## [Russian version] (English version below)
 Шаблон для обнаружения объединенных сетевых интерфейсов, сделанных средствами Windows (LBFO).
 
-Протестирован для Zabbix 4.0 и Windows 2019.
+Протестирован для Zabbix 4.0 и Windows 2016-2019.
 
 Результат работы шаблона - обнаружение всех Team интерфейсов, получение получение статуса Team интерфейсов и режима его работы, триггер срабатывающий на неработоспособность одного из сетевых интерфейсов, входящих в team интерфейс.
 
@@ -95,7 +95,7 @@ Expression: {Template_Network_Team:network.team[health,status,{#TEAM.NAME}].rege
 
 A template for detecting team network interfaces made by Windows (LBFO).
 
-Tested for Zabbix 4.0 and Windows 2019.
+Tested for Zabbix 4.0 and Windows 2016-2019.
 
 The result of the template's work is the detection of all Team interfaces, obtaining the status of Team interfaces and its mode of operation, a trigger that is triggered when one of the network interfaces included in the team interface is inoperable. 
 
